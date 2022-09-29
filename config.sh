@@ -22,8 +22,8 @@ fi
 export COMPILER_NAME="CLANG"
 
 # Kernel config
-export DEFCONFIG="X00T_defconfig"
-export KERNEL_NAME="X00T-Kernel"
+export DEFCONFIG="X573_defconfig"
+export KERNEL_NAME="X573-Kernel"
 
 export KBUILD_BUILD_USER="elf"
 export KBUILD_BUILD_HOST="buildstation"
