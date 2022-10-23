@@ -16,7 +16,7 @@ process_build () {
         CC="${CLANG}" \
         CLANG_TRIPLE=aarch64-linux-gnu- \
         CROSS_COMPILE="${CROSS_COMPILE}" \
-        CROSS_COMPILE_ARM32=arm-linux-androideabi- \
+   #     CROSS_COMPILE_ARM32=arm-linux-androideabi- \
         KBUILD_COMPILER_STRING="$(${CLANG} --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g')" \
     
     BUILD_SUCCESS=$?
