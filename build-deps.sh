@@ -11,7 +11,7 @@ PIDS="${PIDS} $!"
 # ./sync.sh https://github.com/skyhuppa/gcc.git "data/gcc" &
 PIDS="${PIDS} $!"
 #./sync.sh https://github.com/skyhuppa/proton-clang.git "data/clang" &
-./sync.sh https://github.com/ArrowOS-Devices/android_prebuilts_clang_host_linux-x86_clang-r437112
+./sync.sh https://github.com/ArrowOS-Devices/android_prebuilts_clang_host_linux-x86_clang-r437112 "data/clang" &
 PIDS="${PIDS} $!"
 ./sync.sh https://github.com/skyhuppa/AnyKernel3.git "data/anykernel" "master" &
 PIDS="${PIDS} $!"
