@@ -22,8 +22,8 @@ fi
 export COMPILER_NAME="GCC"
 
 # Kernel config
-export DEFCONFIG="lineageos_land_defconfig"
-export KERNEL_NAME="land-Kernel"
+export DEFCONFIG="infinix_x573_defconfig"
+export KERNEL_NAME="infinix-x573-Kernel"
 
 export KBUILD_BUILD_USER="elf"
 export KBUILD_BUILD_HOST="buildstation"
