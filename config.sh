@@ -22,8 +22,8 @@ fi
 export COMPILER_NAME="GCC"
 
 # Kernel config
-export DEFCONFIG="x510_defconfig"
-export KERNEL_NAME="infinix-Kernel"
+export DEFCONFIG="infinix_x573_defconfig"
+export KERNEL_NAME="Infinix_X573-Kernel"
 
 export KBUILD_BUILD_USER="elf"
 export KBUILD_BUILD_HOST="buildstation"
