@@ -38,7 +38,7 @@ cd "${KERNEL_DIR}"
 
 # Ensure the kernel has a label
 if [ -z "${LABEL}" ]; then
-    LABEL="SNAPSHOT-$(git rev-parse --short HEAD)"
+    LABEL="TESTBUILD-$(git rev-parse --short HEAD)"
 fi
 FULLNAME="${KERNEL_NAME}-${LABEL}"
 
