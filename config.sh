@@ -22,7 +22,7 @@ fi
 export COMPILER_NAME="GCC"
 
 # Kernel config
-export DEFCONFIG="X573_defconfig"
+export DEFCONFIG="msm8937-perf_defconfig"
 export KERNEL_NAME="Infinix-X573-Kernel"
 
 export KBUILD_BUILD_USER="elf"
