@@ -12,7 +12,7 @@ env:
  # BOT_API_KEY: ${{ secrets.BOT_TOKEN }}
  # CHAT_ID: ${{ secrets.CHAT_ID }} 
   WorkSpace: WorkSpace
-  TZ: Asia/Shanghai
+  TZ: Africa/Accra
   Author: ${{github.actor}}
   
 jobs:
