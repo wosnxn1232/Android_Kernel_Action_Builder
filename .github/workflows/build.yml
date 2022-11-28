@@ -40,8 +40,8 @@ jobs:
       - name: Building Kernel
       
   #      env:
-   #     BOT_API_KEY: ${{ secrets.BOT_TOKEN }}
-   #     CHAT_ID: ${{ secrets.CHAT_ID }} 
+  #     BOT_API_KEY: ${{ secrets.BOT_TOKEN }}
+  #     CHAT_ID: ${{ secrets.CHAT_ID }} 
         
         run: |
              chmod +x sync.sh
