@@ -25,6 +25,6 @@ export COMPILER_NAME="GCC"
 export DEFCONFIG="infinix_x573_defconfig"
 export KERNEL_NAME="Infinix-X573-Kernel"
 
-export KBUILD_BUILD_USER="elf"
-export KBUILD_BUILD_HOST="buildstation"
-export KBUILD_BUILD_VERSION=1
+export KBUILD_BUILD_USER="skyhuppa"
+export KBUILD_BUILD_HOST="github_runner"
+export KBUILD_BUILD_VERSION=1.0
