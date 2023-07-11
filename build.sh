@@ -23,14 +23,14 @@ process_build () {
     
     if [ ${BUILD_SUCCESS} -eq 0 ]; then
         mkdir -p "${ANYKERNEL_IMAGE_DIR}"
-        cp -f "${KERNEL_DIR}/out/arch/arm64/boot/Image.lzma-dtb" "${ANYKERNEL_IMAGE_DIR}/Image.lzma-dtb"
+        cp -f "${KERNEL_DIR}/out/arch/arm64/boot/Image.gz-dtb" "${ANYKERNEL_IMAGE_DIR}/Image.gz-dtb"
         cd "${ANYKERNEL_DIR}"
         zip -r9 "${REPO_ROOT}/${FULLNAME}.zip" * -x README
         cd -
     fi
     
     rm -rf "${KERNEL_DIR}/out"
-    rm "${ANYKERNEL_IMAGE_DIR}/Image.lzma-dtb"
+    rm "${ANYKERNEL_IMAGE_DIR}/Image.gz-dtb"
     return ${BUILD_SUCCESS}
 }
 
