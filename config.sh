@@ -22,8 +22,10 @@ fi
 export COMPILER_NAME="GCC"
 
 # Kernel config
-export DEFCONFIG="infinix_x573_defconfig"
-export KERNEL_NAME="Infinix-X573-Kernel"
+# export DEFCONFIG="infinix_x573_defconfig"
+# export KERNEL_NAME="Infinix-X573-Kernel"
+export DEFCONFIG=msm8937-perf_defconfig
+export KERNEL_NAME="perf"
 
 export KBUILD_BUILD_USER="skyhuppa"
 export KBUILD_BUILD_HOST="github_runner"
