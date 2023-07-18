@@ -16,24 +16,21 @@ for file in *.zip; do
 echo -e \
 "
 ![ Infinix-X573 ](https://skyhuppa.files.wordpress.com/2023/07/infinix-x573.jpg?w=984)
-🦊 OrangeFox Recovery Builder
+📋 Kernel Builder
 
 ✅ Build Completed Successfully!
 
 🔥 Build-CI: Github Runner
-📱 Device: "${DEVICE}"
-🖥 Build System: "${FOX_BRANCH}"
+📱 Device: Infinix-X573
+🖥 Kernel Verssion: 3.18.X
 ⬇️ Download: <a href=\"${https://oshi.at/_*}\">Here</a>
 📅 Date: "$(date +%d\ %B\ %Y)"
 ⏱ Time: "$(date +%T)"
-📋 Changelog:
-->| Added initial support for Realme 8
 " > tg.html
 
 TG_TEXT=$(< tg.html)
 
 telegram_message "$TG_TEXT"
-telegram-send --file *.zip
 
 echo " "
     
