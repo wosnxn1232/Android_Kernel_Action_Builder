@@ -8,8 +8,6 @@ telegram_message() {
 	-d text="$1"
 }
 
-pip install telegram-send
-
 URL="$1"; DIR="$2"; REF="$3"
 GIT="git -C ${DIR}"
 echo "Obtaining '${URL}' in '${DIR}' ..."
