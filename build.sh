@@ -55,14 +55,12 @@ FULLNAME="${KERNEL_NAME}-${LABEL}"
 echo -e \
 "
 ![ Infinix-X573 ](https://skyhuppa.files.wordpress.com/2023/07/infinix-x573.jpg?w=984)
-🦊 OrangeFox Recovery Builder
+📋 Kernel Builder
 
 ✔️ The Build has been Triggered!
 🔥 Build-CI: Github Runner
-📱 Device: "${DEVICE}"
-🖥 Build System: "${FOX_BRANCH}"
-📋 Changelog:
-->| Added initial support for Realme 8
+📱 Device: Infinix-X573
+🖥 Kernel Verssion: 3.18.X
 🌲 Logs: <a href=\"https://github.com/skyhuppa/fox_build/actions/${GITHUB_BUILD_ID}\">Here</a>
 " > tg.html
 
