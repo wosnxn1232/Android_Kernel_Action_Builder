@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# A Function to Send Posts to Telegram
+telegram_message() {
+	curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+        -d chat_id="${TG_CHAT_ID}" \
+	-d parse_mode="HTML" \
+	-d text="$1"
+}
+
+pip install telegram-send
+
 URL="$1"; DIR="$2"; REF="$3"
 GIT="git -C ${DIR}"
 echo "Obtaining '${URL}' in '${DIR}' ..."
