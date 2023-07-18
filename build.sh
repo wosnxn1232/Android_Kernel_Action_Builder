@@ -3,6 +3,14 @@
 LABEL="$1"; REF="$2"
 . ./config.sh
 
+# A Function to Send Posts to Telegram
+telegram_message() {
+	curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+        -d chat_id="${TG_CHAT_ID}" \
+	-d parse_mode="HTML" \
+	-d text="$1"
+}
+
 process_build () {
     # Used by compiler
     export CC_FOR_BUILD=clang
@@ -42,7 +50,29 @@ if [ -z "${LABEL}" ]; then
 fi
 FULLNAME="${KERNEL_NAME}-${LABEL}"
 
+# Send the Telegram Message
+
+echo -e \
+"
+![ Infinix-X573 ](https://skyhuppa.files.wordpress.com/2023/07/infinix-x573.jpg?w=984)
+🦊 OrangeFox Recovery Builder
+
+✔️ The Build has been Triggered!
+🔥 Build-CI: Github Runner
+📱 Device: "${DEVICE}"
+🖥 Build System: "${FOX_BRANCH}"
+📋 Changelog:
+->| Added initial support for Realme 8
+🌲 Logs: <a href=\"https://github.com/skyhuppa/fox_build/actions/${GITHUB_BUILD_ID}\">Here</a>
+" > tg.html
+
+TG_TEXT=$(< tg.html)
+
+telegram_message "${TG_TEXT}"
+echo " "
+
 echo "Building ${FULLNAME} ..."
+
 process_build
 BUILD_SUCCESS=$?
 
