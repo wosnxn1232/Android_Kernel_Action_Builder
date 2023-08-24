@@ -22,10 +22,10 @@ fi
 export COMPILER_NAME="GCC"
 
 # Kernel config
-# export DEFCONFIG="infinix_X573_defconfig"
-# export KERNEL_NAME="Infinix-X573-Kernel"
- export DEFCONFIG="lineageos_land_defconfig"
- export KERNEL_NAME="land-Kernel"
+ export DEFCONFIG="infinix_X573_defconfig"
+ export KERNEL_NAME="Infinix-X573-Kernel"
+# export DEFCONFIG="lineageos_land_defconfig"
+# export KERNEL_NAME="land-Kernel"
 
 export KBUILD_BUILD_USER="skyhuppa"
 export KBUILD_BUILD_HOST="github_runner"
