@@ -22,10 +22,10 @@ fi
 export COMPILER_NAME="GCC"
 
 # Kernel config
-# export DEFCONFIG="infinix_X573_defconfig"
-# export KERNEL_NAME="Infinix-X573-Kernel"
- export DEFCONFIG="nabu_stability_defconfig"
- export KERNEL_NAME="nabu"
+ export DEFCONFIG="infinix_X573_defconfig"
+ export KERNEL_NAME="Infinix-X573-Kernel"
+# export DEFCONFIG="nabu_stability_defconfig"
+# export KERNEL_NAME="nabu"
 # export DEFCONFIG="lineageos_land_defconfig"
 # export KERNEL_NAME="land-Kernel"
 
